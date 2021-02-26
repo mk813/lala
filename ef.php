@@ -1,6 +1,5 @@
 <?php
 function expanded_form($num) {
-	//$num = 4546545645456456;
 	$length = strlen($num);
 	$efarr = array ($length);
 	for ($i=0;$i < $length;$i++) {
