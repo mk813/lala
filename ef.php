@@ -12,12 +12,14 @@ function expanded_form($num) {
 		$num = $num/10;
 	}
 	for ($i=$length-1;$i>=0;$i--) {
-		if ($i == 0) {
-			echo $efarr[$i] . "<br/>";
+		if ($efarr[$i] == 0) {
+			echo "";
+		} else if ($i == 0) {
+			echo $efarr[$i] . "</br>";
 		} else {
-			echo $efarr[$i] . " + ";
+				echo $efarr[$i] . " + ";
 		}
 	}
 }
-	expanded_form(123123);
+	expanded_form(102);
 ?>
